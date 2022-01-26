@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sac_logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ba1f04"
+                android:text="Electronics Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn1_click" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_below="@id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#FFAB91"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   The Electronics Club is a community of electronics hobbyists and enthusiasts within CMR Engineering College, Hyderabad."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Electronics Club is for all those electronic maniacs who have the courage to accept the challenges in the field of hardware, who have the capabilities to turn imagination to reality and who have the patience to cope up with the surprises in offing for one in circuits and hardware functioning. The idea to develop a comprehensive knowledge of electronics and bring about projects based on core electronics gave the initiation to Electronics Club."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   We aim to fill in the void of Electronics hobbyists in the institute by providing a platform where the theory learnt in classes can be applied in the real world."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   With the constant support from Department of Electronics and Communication Engineering, CMREC , Electronics Club is striving ahead to emerge as the “go-to” forum with constant active discussions and sessions where every minor problem related to electronics can be addressed."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   The Electronics Club is a hobby group that aims to teach and help people understand the seemingly incomprehensible electronic gadgets in the world today, and also assists people in developing their own devices."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To this end, various lectures, workshops, projects as well as competitions throughout the year concerning both analog as well as digital electronics keep the calendar busy and the participants, learning."/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#066da1"
+                android:text="Next Generation Communication and Networks Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn2_click" />
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#556da1"
+                android:visibility="gone"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   NGCN club motto is Communicate or Stagnate. The students in the CMR Engineering College have established this group in order to communicate information and events among our cohort."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Known as NGCN, the group strives for a feeling of family among students from a diverse range of background and situations. NGCN is committed to your academic, professional, and social success, and to the success of the graduate program at the CMREC."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   There will be regular NGCN meetings, and we welcome your participation to make NGCN as strong and as worthwhile as possible. This is the venue to share your thoughts on issues relevant to the student body and the graduate program."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   We will also be holding lots of social activities this year. So We encourage you to get involved, as it’ll be a lot of fun and is your chance to make a difference in your educational environment."/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b77803"
+                android:text="VLSI and Embedded Design Analysis(VEDA) Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn3_click" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_below="@id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#E65100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Content Not Available"/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:background="#10a106"
+                android:text="Embtronics Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn4_click" />
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_below="@id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#2E7D32">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Content Not Available"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/cmrec_ad_mob_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

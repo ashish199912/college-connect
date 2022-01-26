@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+         <TextView
+        android:visibility="visible"
+        android:id="@+id/txt_Dept_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department of ECE"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:background="@color/subject_bg"
+        android:layout_marginTop="5dp"/>
+
+         <ImageView
+        android:visibility="visible"
+        android:id="@+id/img_dept_cover"
+        android:layout_below="@id/txt_Dept_Header"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:src="@drawable/ece_lab"/>
+
+        <LinearLayout
+            android:layout_below="@id/img_dept_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="Vision of the Department"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn1_click" />
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#E57373">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" \u25CF   To promote excellence in technical education and scientific research in electronics and communication engineering for the benefit of society"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="Mission of the Department"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn2_click" />
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#E57373">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" \u25CF   To impart excellent technical education with state of art facilities inculcating values and lifelong learning attitude"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" \u25CF   To develop core competence in our students imbibing professional ethics and team spirit"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" \u25CF   To encourage research benefiting society through higher learning"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="Head of Department"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn3_click" />
+            <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="#E57373">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Prof.C.Ashok Kumar"
+                            android:textSize="19sp"
+                            android:textStyle="bold|italic"
+                            android:textColor="#000"
+                            android:gravity="center"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="203dp"
+                            android:src="@drawable/ece_hod" />
+                    </LinearLayout>
+
+
+        </LinearLayout>
+
+            <Button
+            android:visibility="gone"
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:text="ECE Faculty for ACADEMIC YEAR 2016-17"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn4_click" />
+            <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#E57373">
+
+        </LinearLayout>
+
+            <Button
+            android:visibility="visible"
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:text="Laboratories"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn5_click" />
+            <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#E57373">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Electronic Devices And Circuits Lab-1"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Electronic Devices And Circuits Lab-2"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Electrical And Electronics Engineering Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   IC and Pulse And Digital Circuits Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Basic Simulation Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Digital Signal Processing Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Analog Communications Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   MicroProcessors And MicroControllers Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Microwave Engineering and Digital Communications Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Electronic Circuit Analysis Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   E-CAD and VLSI Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Project Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Embedded Systems Lab"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            ads:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adUnitId="@string/cmrec_ad_mob_banner">
+        </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

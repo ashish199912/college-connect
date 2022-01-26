@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_corner_btn">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+            <TextView
+                android:id="@+id/tpo_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:textColor="@color/main_btn_bg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/subject_bg"/>
+            <TextView
+                android:id="@+id/tpo_rollno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/transparentBG"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/subject_bg"/>
+            <TextView
+                android:id="@+id/tpo_comp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                android:textColor="@color/transparentBG"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/subject_bg"/>
+            <TextView
+                android:id="@+id/tpo_pack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/transparentBG"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

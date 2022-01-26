@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#dcedc8">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   Login section for Backlog Students"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:fontFamily="serif"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   To access any year and any semester contents directly"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:fontFamily="serif"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select 'Regulation'"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif"
+            android:background="@color/subject_bg"
+            />
+
+        <LinearLayout
+            android:id="@+id/llReg"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#01579b">
+
+            <Button
+                android:id="@+id/btnR13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'R13'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btnR15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'R15'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btnR16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'R16'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select 'Branch'"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif"
+            android:background="@color/main_btn_bg"
+            />
+
+        <LinearLayout
+            android:id="@+id/llBranch"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffa726">
+
+            <Button
+                android:id="@+id/btnCSE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'CSE'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btnECE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'ECE'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btnMECH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'MECH'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select 'Year'"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif"
+            android:background="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:id="@+id/llYear"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#304ffe">
+
+            <Button
+                android:id="@+id/btn1yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'1st Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn2yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'2nd Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn3yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'3rd Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn4yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'4th Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select 'Semester'"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif"
+            android:background="#e64a19"
+            />
+
+        <LinearLayout
+            android:id="@+id/llSem"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff5252">
+
+            <Button
+                android:id="@+id/btn1sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'1st Sem'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn2sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'2nd Sem'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#9fa8da">
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="do Login"
+                android:textStyle="bold|italic"
+                android:textSize="25sp"
+                android:background="#000"
+                android:textColor="#fff"
+                android:fontFamily="serif"
+                android:layout_margin="8dp"/>
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset selection"
+                android:textStyle="bold|italic"
+                android:textSize="25sp"
+                android:background="#000"
+                android:textColor="#fff"
+                android:layout_margin="8dp"
+                android:fontFamily="serif"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

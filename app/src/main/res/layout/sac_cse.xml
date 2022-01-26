@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sac_logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fa1f04"
+                android:text="Robotics Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn1_click"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_below="@id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#FFAB91"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   We are an organization at CMREC that provides students with the resources to develop robots."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Robotics is the branch of technology that deals with the design, construction, operation, structural disposition, manufacture and application of robots."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   The concept and creation of autonomously operating machines dates back a long time, but credible research into the functionality and potential uses of robots did not grow substantially until the 20th century. And today, robotics is a rapidly growing field, as we continue to research, design and build new robots that serve various practical purposes including domestic, commercial and military."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Having said that, the Robotics Club of CMREC strives to stimulate interest in robotics among the students of the institute. Besides making a serious Endeavour to spread knowledge on Robotics and its diverse applications, it also stands by the subtle acronym of TEAM - 'Together Everyone Achieves More'. It is this exemplary virtue that has bound the club and helped it to grow to its present potential."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   The club today is an active platform for students to display and develop their practical machine building skills and knowledge."/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#066da1"
+                android:text="Coding Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn2_click" />
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#556da1"
+                android:visibility="gone"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Objectives"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Motivate students to learn programming with enthusiasm"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Teach various methods of solving programming problems in different points of view"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Improve the programming skills of students"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/main_btn_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Anybody can be a part of this club, who"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Are interested in programming"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Needs to take part in various programming events, both inter-college and intra-college"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Wants to learn programming with fun"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Likes to get the latest updates in the programming field"/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b77803"
+                android:text="Artificial Intelligence Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn3_click" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_below="@id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#E65100"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Our club helps students from a variety of backgrounds develop a practical understanding of computational intelligence (AI) and work together to apply programming techniques to games, robotics, or any other AI-related project you can think of."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   We are currently a small and upcoming club on campus, consisting of students from a variety of degree programs interested in sharing a better understanding of artificial intelligence (AI) problems, techniques for implementing their respective solutions, and keeping abreast of current developments in the domain."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   AI focuses on the use of computers and how they can be effectively used to develop intelligent software and systems. When people think of AI, they typically think of the intelligent agents that can be found throughout culture, including, siri, HAL from Space Odyssey, or Cortana from the Halo video game series. But this only is one facet. Other sub disciplines under this area of computer science include natural language processing, robotics, and neural networks to name a few."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   If you're curious to see what we're all about or are ready to simply dive right in, feel free to visit us at one of our weekly meetings or contact our president. We welcome students of all ages and levels of programming experience. No previous experience in AI required."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/cmrec_ad_mob_banner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

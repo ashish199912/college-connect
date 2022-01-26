@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.ior.cmreclh"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 7
+        versionName "1.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //for Google Ad-Mob
+    //compile 'com.startapp:inapp-sdk:3.6.6'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+
+    //for CardView
+    compile 'com.android.support:cardview-v7:25.3.1'
+
+    //for PDF Viewer
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //firebase dependencies
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.google.firebase:firebase-crash:11.0.4'
+    testCompile 'junit:junit:4.12'
+
+    //for volley
+    compile 'com.android.volley:volley:1.0.0'
+}
+
+
+
+apply plugin: 'com.google.gms.google-services'

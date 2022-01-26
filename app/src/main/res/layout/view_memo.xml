@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <!--only 1st year for r13 students-->
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/llR13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnr13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1st Year"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/transparentBG"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                />
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBG"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/txtObtR13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Marks Obtained"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:fontFamily="serif"/>
+
+                <Button
+                    android:id="@+id/btnInsertR13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="insert or update"
+                    android:background="@drawable/round_corner_btn"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/main_btn_bg"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Percentage:"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/pR13"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:textColor="@color/main_btn_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+        <!--===========================-->
+
+        <!--for r15 and r16 having two sems in 1st year-->
+        <LinearLayout
+            android:id="@+id/llR16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1st Yr - 1st Sem"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/transparentBG"/>
+
+            <LinearLayout
+                android:id="@+id/ll11"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBG"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/txtObt11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Marks Obtained"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:fontFamily="serif"/>
+
+                <Button
+                    android:id="@+id/btnInsert11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="insert or update"
+
+                    android:background="@drawable/round_corner_btn"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/main_btn_bg"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Percentage:"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/p11"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:textColor="@color/main_btn_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn12"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1st yr - 2nd sem"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/transparentBG"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll12"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextBG"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/txtObt12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Marks Obtained"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:inputType="number"
+                    android:fontFamily="serif"/>
+
+                <Button
+                    android:id="@+id/btnInsert12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="insert or update"
+                    android:background="@drawable/round_corner_btn"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/main_btn_bg"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Percentage:"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/p12"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic"
+                        android:gravity="center"
+                        android:textColor="@color/main_btn_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--=============================================-->
+
+
+        <Button
+            android:id="@+id/btn21"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2nd yr - 1st sem"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/transparentBG"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll21"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txtObt21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks Obtained"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:id="@+id/btnInsert21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert or update"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/main_btn_bg"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Percentage:"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/p21"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/main_btn_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn22"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2nd yr - 2nd sem"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/transparentBG"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll22"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txtObt22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks Obtained"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:id="@+id/btnInsert22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert or update"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/main_btn_bg"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Percentage:"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/p22"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/main_btn_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn31"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3rd yr - 1st sem"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/transparentBG"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll31"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txtObt31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks Obtained"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:id="@+id/btnInsert31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert or update"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/main_btn_bg"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Percentage:"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/p31"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/main_btn_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn32"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3rd yr - 2nd sem"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/transparentBG"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll32"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txtObt32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks Obtained"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:id="@+id/btnInsert32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert or update"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/main_btn_bg"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Percentage:"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/p32"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/main_btn_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn41"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4th yr - 1st sem"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/transparentBG"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll41"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txtObt41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks Obtained"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:id="@+id/btnInsert41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert or update"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/main_btn_bg"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Percentage:"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/p41"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/main_btn_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn42"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4th yr - 2nd sem"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/transparentBG"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll42"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txtObt42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks Obtained"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:id="@+id/btnInsert42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert or update"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp"
+                android:textColor="@color/main_btn_bg"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:text="Percentage:"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/p42"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:textColor="@color/main_btn_bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnAggregate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Aggregate(click)"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="5dp"
+            android:textColor="@color/main_btn_bg"/>
+        <TextView
+            android:id="@+id/txtAggregate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textStyle="bold|italic"
+            android:textSize="25sp"
+            android:background="@drawable/round_corner_btn"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/main_btn_bg"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            ads:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adUnitId="@string/cmrec_ad_mob_banner">
+        </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item
+        android:id="@+id/icon_donate_main"
+        android:title="Donate"
+        android:icon="@drawable/icons8_us_dollar_50"
+        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/college_details"
+        android:orderInCategory="100"
+        android:title="@string/college_details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/dept_details"
+        android:orderInCategory="100"
+        android:title="@string/dept_details"
+        app:showAsAction="never" />
+
+</menu>

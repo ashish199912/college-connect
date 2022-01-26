@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/round_corner_btn">
+
+    <LinearLayout
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/subject_bg"/>
+
+    <LinearLayout
+        android:id="@+id/llCompLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtCompName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/transparentBG"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/subject_bg"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+
+                <TableRow android:layout_width="match_parent">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Recruited:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/transparentBG"/>
+                    <TextView
+                        android:id="@+id/txtRecruited"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_btn_bg"/>
+                </TableRow>
+
+                <TableRow android:layout_width="0dp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="2dp"
+                        android:background="@color/subject_bg"/>
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Package:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/transparentBG"/>
+                    <TextView
+                        android:id="@+id/txtPackage"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="3.56 LPA"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_btn_bg"/>
+                </TableRow>
+
+                <TableRow android:layout_width="0dp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="2dp"
+                        android:background="@color/subject_bg"/>
+                </TableRow>
+
+                <TableRow android:layout_width="match_parent">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Year:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/transparentBG"/>
+                    <TextView
+                        android:id="@+id/txtYear"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="2016-17"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_btn_bg"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/subject_bg"/>
+
+        </LinearLayout>
+</LinearLayout>

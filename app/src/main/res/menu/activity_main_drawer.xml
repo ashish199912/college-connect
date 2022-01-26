@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_person_black_24dp" />
+        <item
+            android:id="@+id/nav_sac"
+            android:title="SAC"
+            android:icon="@drawable/ic_local_library_black_24dp"/>
+        <item
+            android:id="@+id/nav_placements"
+            android:title="Placements"
+            android:icon="@drawable/ic_school_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_updates"
+           android:title="Updates"
+            android:icon="@drawable/ic_notifications_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_memo"
+            android:title="Aggregate Calculator"
+            android:icon="@drawable/ic_equalizer_black_24dp"/>
+        <item
+            android:id="@+id/nav_bus"
+            android:title="Transport Details"
+            android:icon="@drawable/ic_directions_bus_black_24dp"/>
+        <item
+            android:id="@+id/nav_about"
+            android:title="About"
+            android:icon="@drawable/ic_error_black_24dp"/>
+        <item
+            android:id="@+id/nav_Logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_directions_walk_black_24dp"/>
+        <item
+            android:id="@+id/invite"
+            android:title="Share"
+            android:icon="@drawable/ic_share_black_24dp"/>
+    </group>
+
+
+</menu>

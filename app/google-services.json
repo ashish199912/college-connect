@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "557184753060",
+    "firebase_url": "https://cmrec-little-helper.firebaseio.com",
+    "project_id": "cmrec-little-helper",
+    "storage_bucket": "cmrec-little-helper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557184753060:android:aded3f9bb10b438b",
+        "android_client_info": {
+          "package_name": "com.ior.cmreclh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557184753060-40ft0ehisd60ntu6dem603umema85iuh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ior.cmreclh",
+            "certificate_hash": "52c4cc9f415744902a59bf2a73915dcd9d884a02"
+          }
+        },
+        {
+          "client_id": "557184753060-8a0hpat0qvh25c12ghijjpljjf68sgoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDisK23qMh8cyftco2DE-L8JaT3Mv3PVbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557184753060-8a0hpat0qvh25c12ghijjpljjf68sgoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

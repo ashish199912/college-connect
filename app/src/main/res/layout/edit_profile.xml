@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/cmrec_cover_image"
+                android:contentDescription="@string/logo_cmr_engineering_college"/>
+
+            <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/edt_dataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+           <EditText
+               android:id="@+id/edt_txtName"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_weight="1"
+               android:fontFamily="serif"
+               android:layout_marginBottom="10dp"
+               android:hint="@string/hint_name"
+               android:textColorHint="@color/transparentBG"
+               android:gravity="center"
+               android:background="@drawable/round_corner_btn"
+               android:textColor="@color/transparentBG"
+               android:maxLines="1"
+               android:inputType="textPersonName" />
+
+           <EditText
+               android:id="@+id/edt_txtEmail"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_weight="1"
+               android:fontFamily="serif"
+               android:layout_marginBottom="10dp"
+               android:hint="@string/hint_email_id"
+               android:textColorHint="@color/transparentBG"
+               android:gravity="center"
+               android:background="@drawable/round_corner_btn"
+               android:textColor="@color/transparentBG"
+               android:lines="1"
+               android:inputType="textEmailAddress"/>
+
+           <EditText
+               android:id="@+id/edt_txtPhone"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_weight="1"
+               android:fontFamily="serif"
+               android:layout_marginBottom="10dp"
+               android:hint="@string/hint_phone_number"
+               android:textColorHint="@color/transparentBG"
+               android:gravity="center"
+               android:background="@drawable/round_corner_btn"
+               android:textColor="@color/transparentBG"
+               android:lines="1"
+               android:inputType="phone"/>
+           <Button
+               android:id="@+id/edt_btnUpdate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="@string/btn_update_data"
+               android:minEms="10"
+               android:maxEms="14"
+               android:textSize="19sp"
+               android:background="@drawable/round_corner_btn"
+               android:textColor="@color/main_btn_bg"
+               android:layout_margin="10dp"
+               />
+
+            <TextView
+                android:visibility="visible"
+                android:layout_margin="10dp"
+                android:id="@+id/edt_txtSuccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/main_btn_bg"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/cmrec_ad_mob_banner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

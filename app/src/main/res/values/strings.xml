@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">CMREC Little Helper</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--AdMod-->
+    <string name="cmrec_ad_mob_banner">ca-app-pub-3425562479822889/1602509605</string>
+    <string name="cmrec_ad_mob_Interstitial">ca-app-pub-3425562479822889/8577490807</string>
+    <string name="cmrec_app_id">ca-app-pub-3425562479822889~3705449837</string>
+
+    <!--StartApp-->
+    <string name="start_app_app_id">209189446</string>
+
+    <string name="college_details">College Details</string>
+    <string name="dept_details">Department Details</string>
+
+    <string name="units">Units</string>
+    <string name="null_content">Content Not Yet Available</string>
+    <string name="assignment">Assignment:</string>
+    <string name="ass_subject">Sub:</string>
+    <string name="topics">Topics</string>
+    <string name="modelPapers">Model Papers</string>
+    <string name="mp1">Model Paper I</string>
+    <string name="mp2">Model Paper II</string>
+    <string name="mp3">Model Paper III</string>
+    <string name="modelPaper">Model Paper:</string>
+    <string name="subject">Subject:</string>
+    <string name="checkUpdate">Check for updates</string>
+    <string name="noUpdates">No Updates Available</string>
+    <string name="subjects">Subjects</string>
+    <string name="syllabus_subjects">Syllabus Subjects</string>
+    <string name="assignments">Assignment Subjects</string>
+    <string name="ass1">Assignment - I</string>
+    <string name="ass2">Assignment - II</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_reg">Register</string>
+
+    <string name="college">Welcome to CMR Engineering College</string>
+    <string name="college_detail_1">CMR Engineering College, popularly known as CMREC, was Established in 2010 in a vast area of 10 acres and a built up area of 1, 75,000 sq.ft.. The college is affiliated to JNTU Hyderabad and is approved by All India Council for Technical Education, New Delhi.</string>
+    <string name="college_detail_2">The college provides a perfect ambiance of aesthetically designed buildings. CMR Engineering College (CMREC) is situated on Hyderabad – Nagpur highway(NH7), tucked away from the hustle and bustle of the city and possessing halcyon surrounding. The college is an urban green lung with awe inspiring Wi-Fi enabled infrastructure, well ventilated classrooms, laboratories to foster technological skills, and libraries where books span time, space, culture and genre. To aid the process of learning we have a state-of-art auditorium where various events are conducted to showcase the creative flair of the students. As a provision for physical fitness, the college also has a sports field and indoor stadium.</string>
+    <string name="college_detail_3">CMREC was started with 240 seats with the Bachelor Degree in Engineering Programme, the institute now has total intake of 720 by offering three Under Graduate Courses in ECE, CSE and MECH and Post Graduate Courses in CSE, ES, VLSI and TE. CMREC’s beautiful facility and rich campus is distinctively different from other college campuses across Hyderabad because of the dynamic community of supportive peers, caring and mentoring professors, and friendly staff who work here with commitment. It is an ideal setting for scholastic dedication, pleasant interaction and unbounded pragmatic exploration.</string>
+
+
+    <string name="mission1"> \u25CF   To impart value based quality technical education through innovative teaching and learning methods.</string>
+    <string name="mission2"> \u25CF   To continuously produce employable technical graduates with advanced technical skills to meet the current and future technological needs of the society.</string>
+    <string name="mission3"> \u25CF   To prepare the graduates for higher learning with emphasis on academic and industrial research.</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email_id">Email id</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="btn_update_data">Update Data</string>
+    <string name="logo_cmr_engineering_college">CMR Engineering College</string>
+    <string name="password_changed_success">Password changed successfully.</string>
+    <string name="password_changed_failed">Password change failed. \n try again later</string>
+    <string name="response">response</string>
+    <string name="profile_update_success">Profile details updated successfully.</string>
+    <string name="profile_update_failed">Profile details update failed. \n try again later</string>
+
+    <string name="setText_regulation">Regulation:</string>
+    <string name="setText_Year">Year:</string>
+    <string name="setText_Sem">Sem:</string>
+
+    <!--<string name="google_api_key">AIzaSyBPrf-AbtnkFzeEFoNb_uvOpNzyLetrof0</string>-->
+
+    <!--File and API's locations-->
+
+    <string name="bus_file_location_download">http://step2success.co.in/cmrec_abhishek/Contents/bus_data.pdf</string>
+    <string name="bus_file_location_local">/sdcard/Android/data/com.ior.cmreclh/files/</string>
+
+</resources>

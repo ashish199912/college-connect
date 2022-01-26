@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:src="@drawable/cmrec_cover_image"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll No.:"
+                android:textSize="18sp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/transparentBG"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/pr_txtRollNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Roll Number"
+                android:textSize="18sp"
+                android:textColor="@color/editTextBG"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/transparentBG"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/pr_txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textColor="@color/editTextBG"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:fontFamily="serif"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father Name:"
+                android:textColor="@color/transparentBG"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/pr_txtFatherName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Father Name"
+                android:textColor="@color/editTextBG"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID:"
+                android:textColor="@color/transparentBG"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/pr_txtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email ID"
+                android:textColor="@color/editTextBG"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No.:"
+                android:textColor="@color/transparentBG"
+                android:textSize="18sp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/pr_txtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone Number"
+                android:textColor="@color/editTextBG"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="serif"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pr_btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Edit Details"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:minEms="11"
+            android:maxEms="14"
+            android:textColor="@color/subject_bg"
+            android:background="@drawable/round_corner_btn"
+            android:layout_margin="15dp"
+            android:fontFamily="serif"/>
+
+        <Button
+            android:id="@+id/pr_btnPWD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Change Password"
+            android:textSize="20sp"
+            android:minEms="11"
+            android:maxEms="14"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:textColor="@color/subject_bg"
+            android:background="@drawable/round_corner_btn"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            ads:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adUnitId="@string/cmrec_ad_mob_banner">
+        </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

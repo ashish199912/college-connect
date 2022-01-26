@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Select Update Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="serif"
+                android:textColor="@color/main_btn_bg"
+                android:gravity="center"/>
+
+            <Button
+                android:text="JNTUH Results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_JntuhResults"
+                android:textSize="18sp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:onClick="JNTUHResults"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"
+                />
+
+            <Button
+                android:text="CMR Engineering College"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_CMRSite"
+                android:textSize="18sp"
+                android:onClick="CollegeMain"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:fontFamily="serif"/>
+
+            <Button
+                    android:text="CMREC Repository"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_CMRRepo"
+                    android:textSize="18sp"
+                    android:background="@drawable/round_corner_btn"
+                    android:textColor="@color/transparentBG"
+                    android:onClick="CMRECRepo"
+                    android:layout_margin="10dp"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:text="Notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_Notifications"
+                android:textSize="18sp"
+                android:onClick="Notifications"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:text="Time Table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_Timetable"
+                android:textSize="18sp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:onClick="Timetable"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"/>
+
+            <Button
+                android:text="Academic Calander"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_Calenders"
+                android:textSize="18sp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:onClick="Calenders"
+                android:layout_margin="10dp"
+                android:fontFamily="serif"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/cmrec_ad_mob_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

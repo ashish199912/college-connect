@@ -1,0 +1,1565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/layout_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_cover"
+                android:layout_width="match_parent"
+                android:src="@drawable/cmrec_cover_image"
+                android:layout_height="75dp"
+                android:visibility="visible"/>
+
+        <ScrollView
+            android:id="@+id/clg_scroll"
+            android:layout_below="@id/img_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ba1f04"
+            android:text="About CMR Engineering College"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn1_click" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_below="@id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#FFAB91"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   CMR Engineering College, popularly known as CMREC, was Established in 2010 in a vast area of 10 acres and a built up area of 1, 75,000 sq.ft.. The college is affiliated to JNTU Hyderabad and is approved by All India Council for Technical Education, New Delhi."/>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_below="@id/txt1"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text=" \u25CF   The college provides a perfect ambiance of aesthetically designed buildings. CMR Engineering College (CMREC) is situated on Hyderabad – Nagpur highway(NH7), tucked away from the hustle and bustle of the city and possessing halcyon surrounding. The college is an urban green lung with awe inspiring Wi-Fi enabled infrastructure, well ventilated classrooms, laboratories to foster technological skills, and libraries where books span time, space, culture and genre. To aid the process of learning we have a state-of-art auditorium where various events are conducted to showcase the creative flair of the students. As a provision for physical fitness, the college also has a sports field and indoor stadium."/>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_below="@id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:text=" \u25CF   CMREC was started with 240 seats with the Bachelor Degree in Engineering Programme, the institute now has total intake of 720 by offering three Under Graduate Courses in ECE, CSE and MECH and Post Graduate Courses in CSE, ES, VLSI, and TE. CMREC’s beautiful facility and rich campus is distinctively different from other college campuses across Hyderabad because of the dynamic community of supportive peers, caring and mentoring professors, and friendly staff who work here with commitment. It is an ideal setting for scholastic dedication, pleasant interaction and unbounded pragmatic exploration."
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:background="#066da1"
+            android:text="Vision of the Institution"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn2_click" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_below="@id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:background="#1565C0">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" \u25CF   To be recognized as a premier institution in offering value based and futuristic quality technical education to meet the technological needs of the society."
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll2"
+            android:background="#b77803"
+            android:text="Mission of the Institution"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn3_click" />
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_below="@id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:background="#E65100">
+
+            <TextView
+                android:id="@+id/mission1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mission1"
+                android:layout_alignParentTop="true"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/mission2"
+                android:layout_below="@id/mission1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mission2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/mission3"
+                android:layout_below="@id/mission2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mission3"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll3"
+            android:background="#10a106"
+            android:text="Placement Activity"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn4_click" />
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_below="@id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:background="#2E7D32">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   Approaching various prospective employers"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   Giving Pre-Placement Training to students"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   Arranging On Campus and Off Campus interviews"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   Arranging Industry interaction"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   Arranging Personality Development Programmes"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:text=" \u25CF   Arranging Industrial Tours( Local and Outstation Tours) in their II and III year" />
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll4"
+            android:background="#009688"
+            android:text="Courses Offered"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn5_click" />
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_below="@id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#4DB6AC"
+            android:paddingLeft="5dp"
+            android:visibility="gone">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+                <TableRow android:layout_width="match_parent">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="22sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Courses B.Tech"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Branch"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Intake"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="CSE"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="240"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="ECE"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="240"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="MECH"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="240"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+                <TableRow android:layout_width="match_parent">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="22sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Courses M.Tech"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Branch"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Intake"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="CSE"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="24"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Embedded Systems "
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="24"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="VLSI System Design"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="24"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Thermal Engineering"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="24"
+                        android:textSize="17sp"
+                        android:layout_gravity="end"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll5"
+            android:background="#F44336"
+            android:text="Facilities"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn6_click" />
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_below="@id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:background="#E57373">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Library"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Hostel Accomodation"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Canteen"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    ATM"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Post Office"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Power Backup System"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Medical Facilities"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Water Plant"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Stationery"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Transport Facility"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    High Bandwidth Connectivity"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Sports and Games"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Waiting Halls"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    A/C Seminar Hallls"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    \u25CF    Auditorium"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll6"
+            android:background="#673AB7"
+            android:text="Management"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn7_click" />
+
+        <LinearLayout
+            android:id="@+id/ll7"
+            android:layout_below="@id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#7986CB">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="116dp"
+                    android:src="@drawable/chairman" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|center_horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sri Ch.Narasimha Reddy"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Founder Chairman of CMREC"
+                        android:textSize="16sp"
+                        android:textColor="#424242"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="81dp"
+                    android:src="@drawable/vice_chairman" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center|center_horizontal"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sri Ch.Bhoopal Reddy"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B.Tech, MBA (Lon.)"
+                        android:textSize="16sp"
+                        android:textColor="#212121"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vice-Chairman of CMREC"
+                        android:textSize="16sp"
+                        android:textColor="#424242"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="81dp"
+                    android:src="@drawable/secretary" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center|center_horizontal"
+                    android:layout_marginLeft="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sri Ch.Srisailam Reddy"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B.Tech, MIT (Aus.)"
+                        android:textSize="16sp"
+                        android:textColor="#212121"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Secretary and Correspondent of CMREC"
+                        android:textSize="16sp"
+                        android:textColor="#424242"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll7"
+            android:background="#CDDC39"
+            android:text="Principal"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn8_click" />
+
+        <LinearLayout
+            android:id="@+id/ll8"
+            android:layout_below="@id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="#9CCC65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. A.Srinivasula Reddy"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000"
+                    android:gravity="center"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="203dp"
+                    android:src="@drawable/principal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll8"
+            android:background="#795548"
+            android:text="Head of Department"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="btn9_click" />
+
+            <LinearLayout
+                android:id="@+id/ll9"
+                android:layout_below="@id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#FF8A65">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science and Engg."
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. P. V. Bhaskar Reddy"
+                        android:textSize="19sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:src="@drawable/cse_hod" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics and Communication Engg."
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prof.C.Ashok Kumar"
+                        android:textSize="19sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:src="@drawable/ece_hod" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical Engg."
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prof.N.Jeevan Kumar"
+                        android:textSize="19sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="#000"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="228dp"
+                        android:src="@drawable/mech_hod" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll9"
+                android:background="#607D8B"
+                android:text="Contact"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn10_click" />
+
+            <LinearLayout
+                android:id="@+id/ll10"
+                android:layout_below="@id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#A1887F">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Campus"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Phone  Number:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          +91-84182-00037"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Principal"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Email-ID:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          principal@cmrec.ac.in"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Phone  Number:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          +91-92487-27227"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Admission Cell"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      In-Charge:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          G.Raghupathi Reddy"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Phone  Number:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          +91-92487-27229"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/main_btn_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Administrative Officer"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Phone  Number:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          +91-84182-00037"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      Mobile:"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="          +91-92487-27231"
+                    android:textSize="19sp"
+                    android:textStyle="bold|italic"/>
+
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_below="@id/img_cover"
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="CMR Engineering College"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+                        android:text="Accredited by NBA"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:text="Affiliated to JNTUH, Approved by AICTE"/>
+
+            </LinearLayout>-->
+
+        <!--<Button
+            android:layout_below="@id/img_cover"
+            android:id="@+id/expandableButton11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ba1f04"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton11"
+            android:paddingRight="10dp"
+            android:text="About cmr engineering college"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton11"
+            android:background="#90ba1f04"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="16sp"
+                android:text="CMR Engineering College, popularly known as CMREC, was Established in 2010 in a vast area of 10 acres and a built up area of 1, 75,000 sq.ft.. The college is affiliated to JNTU Hyderabad and is approved by All India Council for Technical Education, New Delhi."/>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_below="@id/txt1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="The college provides a perfect ambience of aesthetically designed buildings. CMR Engineering College (CMREC) is situated on Hyderabad – Nagpur highway(NH7), tucked away from the hustle and bustle of the city and possessing halcyon surrounding. The college is an urban green lung with awe inspiring Wi-Fi enabled infrastructure, well ventilated classrooms, laboratories to foster technological skills, and libraries where books span time, space, culture and genre. To aid the process of learning we have a state-of-art auditorium where various events are conducted to showcase the creative flair of the students. As a provision for physical fitness, the college also has a sports field and indoor stadium."/>
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_below="@id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="CMREC was started with 240 seats with the Bachelor Degree in Engineering Programme, the institute now has total intake of 720 by offering three Under Graduate Courses in ECE, CSE and MECH and Post Graduate Courses in CSE, ES, VLSI, and TE. CMREC’s beautiful facility and rich campus is distinctively different from other college campuses across Hyderabad because of the dynamic community of supportive peers, caring and mentoring professors, and friendly staff who work here with commitment. It is an ideal setting for scholastic dedication, pleasant interaction and unbounded pragmatic exploration."
+                />
+            <TextView
+                android:layout_below="@id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CMR Engineering College, popularly known as CMREC"
+                android:visibility="invisible"/>
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <Button
+            android:layout_below="@id/expandableLayout11"
+            android:id="@+id/expandableButton1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#066da1"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton1"
+            android:paddingRight="10dp"
+            android:text="Vision of the institution"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton1"
+            android:background="#90ba1f04"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To be recognized as a premier institution in offering value based and futuristic quality technical education to meet the technological needs of the society." />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout1"
+            android:background="#b77803"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton2"
+            android:paddingRight="10dp"
+            android:text="Mission of the Institution"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton2"
+            android:background="#90b77803"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:id="@+id/mission1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mission1"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/mission2"
+                android:layout_below="@id/mission1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mission2" />
+            <TextView
+                android:id="@+id/mission3"
+                android:layout_below="@id/mission2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:text="@string/mission3"
+                android:layout_alignParentBottom="true"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <Button
+            android:id="@+id/expandableButton3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout2"
+            android:background="#10a106"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton3"
+            android:paddingRight="10dp"
+            android:text="Placement Activity"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton3"
+            android:background="#9010a106"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="1.Approaching various prospective employers"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="2.Giving Pre-Placement Training to students"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="3.Arranging On Campus and Off Campus interviews"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="4.Arranging Industry interaction"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="5.Arranging Personapty Development Programmes"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="6.Arranging Industrial Tours( Local and Outstation Tours) in their II and III year" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:visibility="invisible"
+                    android:text="6.Arranging Industrial Tours( Local and Outstation Tours) in their II and III year" />
+
+            </LinearLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout3"
+            android:background="#066da1"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton4"
+            android:paddingRight="10dp"
+            android:text="Courses"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton4"
+            android:background="#90066da1"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:stretchColumns="1">
+                    <TableRow android:layout_width="match_parent">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textSize="22sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Courses B.Tech"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Branch"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Intake"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="CSE"
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="240"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="ECE"
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="240"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="MECH"
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="240"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:stretchColumns="1">
+                    <TableRow android:layout_width="match_parent">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textSize="22sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Courses M.Tech"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Branch"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Intake"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="CSE"
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Embedded Systems "
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="VLSI System Design"
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Thermal Engineering"
+                            android:textSize="17sp"
+                            android:layout_gravity="left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="17sp"
+                            android:layout_gravity="end"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Thermal Engineering"
+                            android:textSize="15sp"
+                            android:layout_gravity="left"
+                            android:visibility="invisible"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="15sp"
+                            android:layout_gravity="end"
+                            android:visibility="invisible"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Thermal Engineering"
+                            android:textSize="15sp"
+                            android:layout_gravity="left"
+                            android:visibility="invisible"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="15sp"
+                            android:layout_gravity="end"
+                            android:visibility="invisible"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="Thermal Engineering"
+                            android:textSize="15sp"
+                            android:layout_gravity="left"
+                            android:visibility="invisible"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="24"
+                            android:textSize="15sp"
+                            android:layout_gravity="end"
+                            android:visibility="invisible"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+        <Button
+            android:id="@+id/expandableButton12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout4"
+            android:background="#066da1"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton12"
+            android:paddingRight="10dp"
+            android:text="Expand/Collapse Android Example"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton12"
+            android:background="#90066da1"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hello"/>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+-->
+
+            </LinearLayout>
+        </ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/cmrec_ad_mob_banner">
+        </com.google.android.gms.ads.AdView>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

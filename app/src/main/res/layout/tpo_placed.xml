@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <LinearLayout
+        android:id="@+id/llProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="please wait"
+            android:textSize="25sp"
+            android:textColor="@color/transparentBG"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llPlaced"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+        <GridView
+            android:id="@+id/grid_students"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp">
+
+        </GridView>
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/cmrec_ad_mob_banner">
+    </com.google.android.gms.ads.AdView>
+
+  </LinearLayout>

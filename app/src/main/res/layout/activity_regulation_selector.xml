@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/cmrec_cover_image"
+                android:contentDescription="@string/logo_cmr_engineering_college"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select 'Regulation'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/subject_bg"
+                />
+
+        <LinearLayout
+            android:id="@+id/llReg"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#01579b">
+
+            <Button
+                android:id="@+id/btnR13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'R13'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btnR15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'R15'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btnR16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'R16'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select 'Year'"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif"
+            android:background="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:id="@+id/llYear"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#304ffe">
+
+            <Button
+                android:id="@+id/btn1yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'1st Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn2yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'2nd Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn3yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'3rd Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn4yr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'4th Year'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select 'Semester'"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:fontFamily="serif"
+            android:background="#e64a19"
+            />
+
+        <LinearLayout
+            android:id="@+id/llSem"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ff5252">
+
+            <Button
+                android:id="@+id/btn1sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'1st Sem'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btn2sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'2nd Sem'"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:fontFamily="serif"
+                android:background="@color/transparentBG"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/btnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed"
+                android:textSize="20sp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:fontFamily="serif"
+                android:layout_margin="8dp"/>
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset selection"
+                android:textSize="20sp"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:layout_margin="8dp"
+                android:fontFamily="serif"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

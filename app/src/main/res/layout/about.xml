@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_corner_btn">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_icon"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:padding="2dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CMREC"
+                    android:textSize="27sp"
+                    android:textStyle="bold|italic"
+                    android:fontFamily="serif"
+                    android:textColor="@color/transparentBG"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Little Helper"
+                    android:textStyle="italic"
+                    android:fontFamily="serif"
+                    android:textColor="@color/transparentBG"
+                    android:textSize="27sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developed By:"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/transparentBG"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IOR Developers"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textColor="@color/transparentBG"
+                    android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+              <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:background="@drawable/round_corner_btn"
+                  android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developed For:"
+                    android:fontFamily="serif"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/transparentBG"/>
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CMR Engineering College"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:onClick="clgOnClick"
+                    />-->
+                <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:src="@drawable/cmrec_cover_image"
+            android:onClick="clgOnClick"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+         </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/round_corner_btn"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email ID:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/transparentBG"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IORDevelopers@gmail.com"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:autoLink="email"
+                    android:textColor="@color/transparentBG"
+                    android:textColorLink="@color/transparentBG"
+                    android:layout_marginBottom="5dp"
+                    android:paddingBottom="5dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+
+    <ImageView
+        android:id="@+id/parent_img"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:src="@drawable/sac_logo"/>
+
+    <TextView
+        android:id="@+id/txt_sac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Activities Club"
+        android:textSize="24sp"
+        android:textColor="@color/transparentBG"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:layout_below="@id/parent_img"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_sac">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_sac"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/sac_cse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_btn"
+            android:textColor="@color/transparentBG"
+            android:text="CSE Clubs"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:minEms="9"
+            android:maxEms="14"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/sac_ece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="9"
+            android:maxEms="14"
+            android:background="@drawable/round_corner_btn"
+            android:textColor="@color/transparentBG"
+            android:text="ECE Clubs"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:layout_margin="10dp"/>
+        <Button
+                android:id="@+id/sac_mech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="9"
+                android:maxEms="14"
+                android:background="@drawable/round_corner_btn"
+                android:textColor="@color/transparentBG"
+                android:text="MECH Clubs"
+                android:fontFamily="serif"
+                android:textSize="25sp"
+                android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/cmrec_ad_mob_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

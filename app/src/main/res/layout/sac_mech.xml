@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sac_logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ba1f04"
+                android:text="Design Analysis and Manufacturing Club(DAM)"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn1_click" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_below="@id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#FFAB91"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Objectives"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To Understand students about the differences and similarities between Design for Manufacturing and Design for Assembly"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To Describe how product design has a primary influence"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Basic criteria for Part Minimization"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Quantitative analysis of a design’s efficiency"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Critique product designs for ease of assembly"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To Understand the students about the importance of Design for Assembly(DFA) system"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To teach students about the importance of optimization of the parts/assembly in DFA system"/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#066da1"
+                android:text="Automobile Engineering Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn2_click" />
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#556da1"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Objectives"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To provide the Skills and Knowledge in automotive industry and Automobiles with a forum for technical know-how"/>
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="visible"
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#b77803"
+                android:text="Robotics and Automation Club"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:onClick="btn3_click" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_below="@id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#E65100"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Overview"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Robotics Club is dedicated to the exploration, making and programming of robots. Students will develop skills in programming their robots to meet specific design challenges."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   Objectives"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To promote a love of robots within CMR Engineering College"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To engage the students in computer programming and problem solving activities to encourage creativity and initiative"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To encourage participation in club activities in CMR ENGINEERING COLLEGE"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To liaise with external Robotics clubs"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To teach present scenario about the development of robotics and its importance to all the students who are members in the club"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To Build stalls for exhibiting robot models"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:text=" \u25CF   To introduce students for programming to mobile robots"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            ads:adSize="BANNER"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adUnitId="@string/cmrec_ad_mob_banner">
+        </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
